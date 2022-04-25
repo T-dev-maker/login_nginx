@@ -31,6 +31,6 @@ def update():
             myquery = { "email": str(user_email) }
             newvalues = { "$set": { "name": str(user_name),"password":str(user_pass)} }
             db.users.update_one(myquery,newvalues)
-    return render_template("xoa.html")
+    return render_template("delete.html")
 if __name__ =="__main__":
     app.run(debug=True,port=3000)
