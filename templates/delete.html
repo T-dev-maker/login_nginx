@@ -1,0 +1,30 @@
+<h1> This Is Delete user </h1>
+    
+    {% extends "base.html" %}
+
+    {% block content %}
+      </div>
+      <div class="card">
+    
+        <h1 class="center">Delete User</h1>
+        <form action="#" method="post">
+            <label for="#">Email</label>
+            <input name="email" type="email" placeholder="Enter email" value="{{email if email}}" > </input>
+            <button type="submit">Delete</button>
+        </form>
+  
+      </div>
+      <div class="card">
+    
+        <h1 class="center">Update User</h1>
+        <form action="/update" method="POST">
+            <input name="update_email" type="email" placeholder="Enter email" value="{{email if email}}" > </input>
+            <input name="update_name" type="name" placeholder="Enter name"  > </input>
+            <input name="update_password" type="password" placeholder="Enter password" > </input>
+            <button type="submit">Update</button>
+        </form>
+  
+      </div>
+      </div>
+
+    {% endblock %}
